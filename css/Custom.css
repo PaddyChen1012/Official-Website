@@ -1,0 +1,193 @@
+* {
+    user-select: none;
+}
+.navbar {
+    background-color: rgba(166,227,233,.5) !important;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 1rem;
+    transition: padding .4s ease;
+    z-index: 3;
+}
+.navbar.moving {
+    background-color: rgba(166,227,233,1) !important;
+    padding: .5rem 1rem;
+}
+.page {
+    position: relative;
+    height: 100vh;
+    background-color: rgba(227,253,253,1);
+    overflow: hidden;
+}
+.page4 {
+    height: auto;
+}
+.Double {
+    position: relative;
+    background-color: rgba(227,253,253,1);
+}
+.pageDouble {
+    position: relative;
+    overflow: hidden;
+}
+.warp {
+    position: absolute;
+    /* height: 200%; */
+    -webkit-filter:opacity(.2);
+}
+.container {
+    height: 100%;
+    padding-top: 78px;
+    padding-bottom: 8px;
+    z-index: 1;
+}
+.msg {
+    position: relative;
+    background-color: rgba(114,202,207,.8);
+}
+/* .btn {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    background: url(../images/padlock.png)no-repeat center , #fff;
+    transition: all .8s ease;
+    z-index: 1;
+}
+.msg::before,
+.msg::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -25%;
+    bottom: 49%;
+    left: 0;
+    right: 0;
+    background-color: #e3fdfd;
+    transform: skewY(-15deg);
+    transition: all .8s ease;
+}
+.msg::after {
+    top: 49%;
+    bottom: -25%;
+}
+.msg:hover .btn {
+    opacity: 0;
+}
+.msg:hover:before {
+    bottom: 125%;
+}
+.msg:hover:after {
+    top: 125%;
+} */
+.title {
+    position: relative;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.6);
+    color: rgba(255,255,255,1);
+}
+.left { 
+    left: 0; 
+    transform: translateX(-50vh);
+    transition: transform .8s ease;
+}
+.right { 
+    right: 0; 
+    transform: translateX(50vh);
+    transition: transform .8s ease;
+}
+.active .left,
+.active .right {
+    transform: translateX(0vh);
+}
+/* .title_word_l {
+    left: 0;
+    width: 37.5%;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 50px;
+    writing-mode: vertical-lr;
+}
+.title_word_r {
+    right: 0;
+    width: 37.5%;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 50px;
+    writing-mode: vertical-lr;
+} */
+.pre-line {
+    white-space: pre-line;
+}
+.custom-footerb-color {
+    background-color: rgb(4, 83, 90) !important;
+    color: #fff;
+}
+.form-group label {
+    min-width: 88px;
+}
+
+@media (min-width: 768px) {
+    .page {
+        height: 100vh;
+    }
+    .col-p {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 47%;
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+    .pageDouble {
+        height: 100vh;
+    }
+    .card { transition: transform .8s ease;}
+    .card_1 { transform: translate(50%,50%);}
+    .card_2 { transform: translate(-50%,50%);}
+    .card_3 { transform: translate(50%,0);}
+    .card_4 { transform: translate(-50%,0);}
+    .card_5 { transform: translate(50%,-50%);}
+    .card_6 { transform: translate(-50%,-50%);}
+    .active .card { transform: translate(0,0);}
+    .title {
+        position: absolute;
+        display: flex;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        justify-content: center;
+        background-color: rgba(0,0,0,.6);
+        color: rgba(255,255,255,1);
+        writing-mode: vertical-lr;
+    }
+    .left { 
+        align-items: flex-end;
+    }
+    .right { 
+        align-items: flex-start;
+    }
+    .title.left::before,
+    .title.right::before {
+        content: '';
+        position: absolute;
+        display: flex;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+    .title.left::before {
+        right: -25vh;
+        border-width: 50vh 0 50vh 25vh;
+        border-color: transparent transparent transparent rgba(0,0,0,.6);
+    }
+    .title.right::before {
+        left: -25vh;
+        border-width: 50vh 25vh 50vh 0;
+        border-color: transparent rgba(0,0,0,.6) transparent transparent;
+    }
+}
