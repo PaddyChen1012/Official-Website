@@ -52,7 +52,7 @@
     </div>
 
     <!-- page_1 START -->
-    <div id="page1" class="page d-flex align-items-center">
+    <div id="page1" class="page d-flex align-items-center" data-num="1">
         <div class="warp w-100 h-100" style="background: url(images/img_01.jpg)no-repeat center/cover;"></div>
         <div class="container d-flex align-items-md-center flex-wrap">
             <h2 class="title left pre-line mb-3 m-md-0">關於我們</h2>
@@ -170,7 +170,7 @@
         <div class="warp w-100 h-100" style="background: url(images/img_03.jpg)no-repeat center/cover;"></div>
         <div class="container d-flex align-items-center flex-wrap">
             <h2 class="title left pre-line mb-3 m-md-0">聯絡我們</h2>
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-12 col-md-8 ml-auto">
                     <form class="card border-info p-3 mb-3 card_6">
                         <h5 class="card-title mb-0 font-weight-bolder">米粒恩國際股份有限公司</h5>
@@ -298,6 +298,14 @@
         }
         window.addEventListener('scroll', navbar);
             
+        // document.body.onmousewheel = function(e){
+        //     if (e.wheelDelta < 0) {
+        //         // window.pageYOffset = this.clientHeight;
+        //         console.log(e.target);
+        //     }
+        //     console.dir(e.wheelDelta);
+        // }
+
     </script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
