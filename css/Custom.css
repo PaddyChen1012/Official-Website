@@ -138,11 +138,13 @@
     }
     .card { transition: transform .8s ease;}
     .card_1 { transform: translate(50%,50%);}
-    .card_2 { transform: translate(-50%,50%);}
-    .card_3 { transform: translate(0,50%);}
-    .card_4 { transform: translate(0,-50%);}
-    .card_5 { transform: translate(50%,-50%);}
-    .card_6 { transform: translate(-50%,-50%);}
+    .card_2 { transform: translate(0,50%);}
+    .card_3 { transform: translate(-50%,50%);}
+    .card_4 { transform: translate(-50%,0);}
+    .card_5 { transform: translate(-50%,-50%);}
+    .card_6 { transform: translate(0,-50%);}
+    .card_7 { transform: translate(50%,-50%);}
+    .card_8 { transform: translate(50%,0);}
     .active .card { transform: translate(0,0);}
     .title {
         position: absolute;
@@ -179,5 +181,8 @@
         left: -25vh;
         border-width: 50vh 25vh 50vh 0;
         border-color: transparent rgba(0,0,0,.6) transparent transparent;
+    }
+    .form-group {
+        margin-bottom: .5rem;
     }
 }
