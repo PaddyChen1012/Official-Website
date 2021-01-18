@@ -106,22 +106,6 @@
 .active .right {
     transform: translateX(0vh);
 }
-/* .title_word_l {
-    left: 0;
-    width: 37.5%;
-    justify-content: center;
-    background-color: transparent;
-    font-size: 50px;
-    writing-mode: vertical-lr;
-}
-.title_word_r {
-    right: 0;
-    width: 37.5%;
-    justify-content: center;
-    background-color: transparent;
-    font-size: 50px;
-    writing-mode: vertical-lr;
-} */
 .pre-line {
     white-space: pre-line;
 }
@@ -143,14 +127,20 @@
         flex: 0 0 47%;
         max-width: 47%;
     }
+    .col-p1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 31%;
+        flex: 0 0 31%;
+        max-width: 31%;
+    }
     .pageDouble {
         height: 100vh;
     }
     .card { transition: transform .8s ease;}
     .card_1 { transform: translate(50%,50%);}
     .card_2 { transform: translate(-50%,50%);}
-    .card_3 { transform: translate(50%,0);}
-    .card_4 { transform: translate(-50%,0);}
+    .card_3 { transform: translate(0,50%);}
+    .card_4 { transform: translate(0,-50%);}
     .card_5 { transform: translate(50%,-50%);}
     .card_6 { transform: translate(-50%,-50%);}
     .active .card { transform: translate(0,0);}
